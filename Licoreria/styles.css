@@ -1,0 +1,143 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Container styling */
+.container {
+    padding: 20px;
+}
+
+/* Welcome section styling */
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.welcome h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    max-width: 500px; /* Fixed width for the carousel */
+    margin: auto; /* Center the carousel horizontally */
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.slides {
+    display: none;
+    width: 100%; /* Ensure slides take full width of the carousel */
+    height: 500px; /* Fixed height for carousel */
+    position: relative; /* Position relative to contain absolutely positioned elements */
+}
+
+.slides img {
+    width: 500px; /* Fixed width for images */
+    height: 500px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Navigation buttons styling */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Dot container styling */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    border-radius: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Table styling */
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 5px 0;
+}
